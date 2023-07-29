@@ -15,8 +15,7 @@
  */
 package com.cameron.controller;
 
-import com.cameron.interfaces.IActorService;
-import com.cameron.model.Actor;
+import com.cameron.interfaces.IRateService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.internal.verification.Times;
@@ -28,45 +27,26 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
-public class ActorControllerTest {
+public class RateControllerTest {
 
     @Mock
-    private IActorService actorService;
+    private IRateService rateService;
 
-    public ActorControllerTest() {
-        actorService = mock(IActorService.class);
+    public RateControllerTest() {
+        rateService = mock(IRateService.class);
     }
 
 
     @Test
     public void testGetActorsEndpoint() {
         //Arrange
-        ActorController controller = new ActorController(actorService);
-        List<Actor> actorList = new ArrayList<Actor>();
-        Actor newActor = new Actor(1, 2, "imdb", "name");
-        actorList.add(newActor);
-        when(actorService.getActors()).thenReturn(actorList);
+        RateController controller = new RateController(rateService);
+        when(rateService.getRates()).thenReturn("rate");
 
         //Act
-        List<Actor> rs = controller.getActors();
+        String rs = controller.getActors();
 
         //Assert
         assertNotNull(rs);
-        assertTrue(rs.size() == 1);
-        assertTrue(rs.get(0).equals(newActor));
-    }
-
-    @Test
-    public void testAddActorsEndpoint() {
-        //Arrange
-        ActorController controller = new ActorController(actorService);
-        Actor actor = new Actor();
-        doNothing().when(actorService).addNewActor(actor);
-
-        //Act
-        controller.addNewActor(actor);
-
-        //Assert
-        verify(actorService, times(1)).addNewActor(actor);
     }
 }

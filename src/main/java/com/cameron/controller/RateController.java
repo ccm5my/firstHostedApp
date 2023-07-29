@@ -1,19 +1,18 @@
 package com.cameron.controller;
 
-import com.cameron.interfaces.IActorService;
-import com.cameron.model.Actor;
+import com.cameron.interfaces.IRateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-public class ActorController {
+public class RateController {
 
-	private IActorService actors;
+	private IRateService actors;
 	
 	@Autowired
-	public ActorController(IActorService actors) {
+	public RateController(IRateService actors) {
 		this.actors = actors;
 	}
 

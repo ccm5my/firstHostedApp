@@ -1,4 +1,4 @@
 package com.cameron.service;
 
-public class ActorServiceTest {
+public class RateServiceTest {
 }
