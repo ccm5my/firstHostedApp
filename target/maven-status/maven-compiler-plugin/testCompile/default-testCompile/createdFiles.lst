@@ -1,0 +1,4 @@
+com/cameron/service/ActorServiceTest.class
+com/cameron/service/MovieServiceTest.class
+com/cameron/controller/MovieControllerTest.class
+com/cameron/controller/ActorControllerTest.class
