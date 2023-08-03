@@ -8,18 +8,17 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RateService implements IRateService {
-    
-    // private IMortgageAPIClient client;
 
-    // @Autowired
-    // public RateService(IMortgageAPIClient client) {
-    //     this.client = client;
-    // }
-    
+    private IMortgageAPIClient client;
+
+    @Autowired
+    public RateService(IMortgageAPIClient client) {
+        this.client = client;
+    }
+
     @Override
     public String getRates() {
-    //    return client.getRates();
-    return "Hi";
+        return client.getRates();
 
     }
 }

@@ -1,4 +1,4 @@
-package com.client;
+package com.cameron.client;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
