@@ -1,10 +1,6 @@
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/service/MovieService.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/controller/ActorController.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/controller/RestServiceApplication.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/service/ActorService.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/interfaces/IMovieService.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/model/Movie.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/database/ConnectionFactory.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/model/Actor.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/controller/MovieController.java
-/Users/cameronmoore/projects/javaSpringBootAPI/src/main/java/com/cameron/interfaces/IActorService.java
+/Users/cameronmoore/projects/rateFinder/src/main/java/com/cameron/interfaces/IRateService.java
+/Users/cameronmoore/projects/rateFinder/src/main/java/com/cameron/controller/RateController.java
+/Users/cameronmoore/projects/rateFinder/src/main/java/com/cameron/controller/RestServiceApplication.java
+/Users/cameronmoore/projects/rateFinder/src/main/java/com/cameron/service/RateService.java
+/Users/cameronmoore/projects/rateFinder/src/main/java/com/cameron/interfaces/IMortgageAPIClient.java
+/Users/cameronmoore/projects/rateFinder/src/main/java/com/client/MortgageAPIClient.java

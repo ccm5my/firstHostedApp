@@ -1,10 +1,1 @@
-com/cameron/database/ConnectionFactory.class
-com/cameron/model/Actor.class
-com/cameron/service/MovieService.class
-com/cameron/interfaces/IMovieService.class
-com/cameron/service/ActorService.class
-com/cameron/controller/ActorController.class
-com/cameron/interfaces/IActorService.class
 com/cameron/controller/RestServiceApplication.class
-com/cameron/model/Movie.class
-com/cameron/controller/MovieController.class

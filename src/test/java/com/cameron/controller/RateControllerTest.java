@@ -18,13 +18,7 @@ package com.cameron.controller;
 import com.cameron.interfaces.IRateService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-import org.mockito.internal.verification.Times;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.*;
 
 public class RateControllerTest {
@@ -38,7 +32,7 @@ public class RateControllerTest {
 
 
     @Test
-    public void testGetActorsEndpoint() {
+    public void testGetRatesEndpoint() {
         //Arrange
         RateController controller = new RateController(rateService);
         when(rateService.getRates()).thenReturn("rate");

@@ -1,19 +1,25 @@
 package com.cameron.service;
 
+import com.cameron.interfaces.IMortgageAPIClient;
 import com.cameron.interfaces.IRateService;
-import org.springframework.stereotype.Service;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class RateService implements IRateService {
+    
+    // private IMortgageAPIClient client;
+
+    // @Autowired
+    // public RateService(IMortgageAPIClient client) {
+    //     this.client = client;
+    // }
+    
     @Override
     public String getRates() {
-        return "here is a rate";
+    //    return client.getRates();
+    return "Hi";
+
     }
 }
